@@ -158,7 +158,7 @@ function getSelectedAnswer() {
 function checkAnswer(userAnswer) {
   const correctAnswer = quizData[currentQuestionIndex].answer;
   if (Array.isArray(correctAnswer)) {
-    // Multi-select: check if arrays match (regardless of order)
+   
     return (
       Array.isArray(userAnswer) &&
       correctAnswer.length === userAnswer.length &&
@@ -197,7 +197,6 @@ function showResult() {
   `;
 }
 
-// Initialize quiz
 renderQuestion();
 
    
